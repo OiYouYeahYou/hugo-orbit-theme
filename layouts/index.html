@@ -1,37 +1,39 @@
 <!DOCTYPE html>
-    {{ partial "lang.html" . }}
+<!--[if IE 8]> <html lang="{{ .Site.Language }}" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="{{ .Site.Language }}" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="{{ .Site.Language }}"> <!--<![endif]-->
 <head>
-    {{ partial "head.html" . }}
+	{{ partial "head.html" . }}
 </head>
 
 <body>
-    <div class="wrapper">
+	<div class="wrapper">
 
-    {{ partial "sidebar.html" . }}
+		{{ partial "sidebar.html" . }}
 
-	<div class="main-wrapper">
+		<div class="main-wrapper">
 
-    {{ if .Site.Params.summary.enable }}
-	{{ partial "summary.html" . }}
-    {{ end }}
+			{{ if .Site.Params.summary.enable }}
+				{{ partial "sections/summary.html" . }}
+			{{ end }}
 
-    {{ if .Site.Params.experiences.enable }}
-    {{ partial "experiences.html" . }}
-    {{ end }}
+			{{ if .Site.Params.experiences.enable }}
+				{{ partial "sections/experiences.html" . }}
+			{{ end }}
 
-    {{ if .Site.Params.projects.enable }}
-    {{ partial "projects.html" . }}
-    {{ end }}
+			{{ if .Site.Params.projects.enable }}
+				{{ partial "sections/projects.html" . }}
+			{{ end }}
 
-    {{ if .Site.Params.skills.enable }}
-	{{ partial "skills.html" . }}
-    {{ end }}
+			{{ if .Site.Params.skills.enable }}
+				{{ partial "sections/skills.html" . }}
+			{{ end }}
 
-	</div><!--//main-body-->
-    </div>
+		</div>
+	</div>
 
 	{{ partial "footer.html" . }}
 
-    {{ partial "scripts.html" . }}
+	{{ partial "scripts.html" . }}
 </body>
 </html>
