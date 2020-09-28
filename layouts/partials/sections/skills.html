@@ -1,5 +1,17 @@
 <section class="skills-section section">
-	<h2 class="section-title"><i class="fa {{ .Site.Params.skills.icon }}"></i>{{ i18n "skills" }}</h2>
+	<h2 class="section-title">
+		{{- with .Site.Params.skills.icon -}}
+			<i class="fa {{ . }}"></i>
+		{{- else -}}
+			<i class="fa fa-rocket"></i>
+		{{- end -}}
+		{{- with .Site.Params.skills.title -}}
+			{{ . }}
+		{{- else -}}
+			{{ i18n "skills" }}
+		{{- end -}}
+	</h2>
+
 	<div class="skillset">
 		{{ range .Site.Params.skills.list }}
 			<div class="item">
