@@ -16,7 +16,15 @@
 <link rel="stylesheet" href="{{ .Site.BaseURL }}assets/plugins/font-awesome/css/font-awesome.css">
 
 {{/* Theme CSS */}}
-<link id="theme-style" rel="stylesheet" href="{{ .Site.BaseURL }}assets/css/{{ .Site.Params.styles }}">
+<link
+	id="theme-style"
+	rel="stylesheet"
+	{{ with .Site.Params.styles -}}
+		href="{{ site.BaseURL }}assets/css/styles-{{ . }}.css"
+	{{- else -}}
+		href="{{ site.BaseURL }}assets/css/styles-1.css"
+	{{- end }}
+>
 
 {{ partial "custom-styles.html" . }}
 
