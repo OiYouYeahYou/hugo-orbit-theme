@@ -36,8 +36,8 @@ disable404 = true
     # Profile section
     [params.profile]
         name = "John Doe"
-        tagline = "Full Stack Developer"
-        avatar = "profile.png"
+        tagline = "Full Stack Developer" # Optional
+        avatar = "profile.png" # Optional
 
     # Contact section
     [params.contact]

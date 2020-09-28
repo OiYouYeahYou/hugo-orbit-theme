@@ -1,5 +1,13 @@
 <div class="profile-container">
-	<img class="profile img-circle" src="{{ .Site.BaseURL }}assets/images/{{ .Site.Params.profile.avatar }}" alt="" />
+	{{ with .Site.Params.profile.avatar }}
+		<img
+			class="profile img-circle"
+			src="{{ site.BaseURL }}assets/images/{{ . }}"
+			alt="Avatar Picture"
+		/>
+	{{ end }}
 	<h1 class="name">{{ .Site.Params.profile.name }}</h1>
-	<h3 class="tagline">{{ .Site.Params.profile.tagline }}</h3>
+	{{ with .Site.Params.profile.tagline -}}
+		<h3 class="tagline">{{ . }}</h3>
+	{{- end }}
 </div>
