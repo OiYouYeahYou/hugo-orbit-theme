@@ -7,7 +7,17 @@
 			use the template without the attribution, you can check out other
 			license options via our website: https://themes.3rdwavemedia.com
 		-->
-		<small class="copyright">Designed with <i class="fa fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small><br>
-		<small class="copyright">{{ now.Year }} &copy; {{ with .Site.Params.footer.copyright }}{{ . | markdownify }}{{ else }}Ported for Hugo by <a href="https://github.com/aerohub" target="_blank">Pavel Kanyshev</a>{{ end }}</small>
+		<small class="copyright">
+			Designed with <i class="fa fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="noopener"> Xiaoying Riley </a> for developers
+		</small>
+		<br>
+		<small class="copyright">
+			{{ now.Year }} &copy; 
+			{{ with .Site.Params.footer.copyright -}}
+				{{ . | markdownify }}
+			{{- else -}}
+				Ported for Hugo by <a href="https://github.com/aerohub" target="_blank" rel="noopener"> Pavel Kanyshev </a>
+			{{- end }}
+		</small>
 	</div>
 </footer>
