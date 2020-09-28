@@ -13,19 +13,19 @@
 
 		<div class="main-wrapper">
 
-			{{ if .Site.Params.summary.enable }}
+			{{ if .Site.Params.summary }}
 				{{ partial "sections/summary.html" . }}
 			{{ end }}
 
-			{{ if .Site.Params.experiences.enable }}
+			{{ if .Site.Params.experiences }}
 				{{ partial "sections/experiences.html" . }}
 			{{ end }}
 
-			{{ if .Site.Params.projects.enable }}
+			{{ if .Site.Params.projects }}
 				{{ partial "sections/projects.html" . }}
 			{{ end }}
 
-			{{ if .Site.Params.skills.enable }}
+			{{ if .Site.Params.skills }}
 				{{ partial "sections/skills.html" . }}
 			{{ end }}
 

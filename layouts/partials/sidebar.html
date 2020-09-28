@@ -6,19 +6,19 @@
 		{{ partial "sidebar/translate.html" . }}
 	{{ end }}
 
-	{{ if .Site.Params.contact.enable }}
+	{{ if .Site.Params.contact }}
 		{{ partial "sidebar/contact.html" . }}
 	{{ end }}
 
-	{{ if .Site.Params.education.enable }}
+	{{ if .Site.Params.education }}
 		{{ partial "sidebar/education.html" . }}
 	{{ end }}
 
-	{{ if .Site.Params.language.enable }}
+	{{ if .Site.Params.language }}
 		{{ partial "sidebar/language.html" . }}
 	{{ end }}
 
-	{{ if .Site.Params.interests.enable }}
+	{{ if .Site.Params.interests }}
 		{{ partial "sidebar/interests.html" . }}
 	{{ end }}
 

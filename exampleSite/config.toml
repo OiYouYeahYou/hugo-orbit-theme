@@ -36,7 +36,6 @@ disable404 = true
 
     # Contact section
     [params.contact]
-        enable = true
 
         [[params.contact.list]]
         class = "email"
@@ -76,7 +75,6 @@ disable404 = true
 
     # Education section
     [params.education]
-        enable = true
         title = "Education"
 
         [[params.education.list]]
@@ -91,7 +89,6 @@ disable404 = true
 
     # Languages section
     [params.language]
-        enable = true
         title = "Languages"
 
         [[params.language.list]]
@@ -108,7 +105,6 @@ disable404 = true
 
     # Interests section
     [params.interests]
-        enable = true
         title = "Interests"
 
         [[params.interests.list]]
@@ -126,14 +122,12 @@ disable404 = true
 
     # Summary section
     [params.summary]
-        enable = true
         icon = "fa-user"
         title = "Career Profile"
         summary = "**Summarise your career here** lorem ipsum dolor sit amet, consectetuer adipiscing elit. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu."
 
     # Experiences section
     [params.experiences]
-        enable = true
         icon = "fa-briefcase"
         title = "Experiences"
 
@@ -157,7 +151,6 @@ disable404 = true
 
     # Projects section
     [params.projects]
-        enable = true
         icon = "fa-archive"
         title = "Projects"
         intro = "**You can list your side projects or open source libraries in this section.** Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus"
@@ -189,7 +182,6 @@ disable404 = true
 
     # Skills section
     [params.skills]
-        enable = true
         icon = "fa-rocket"
         title = "Skills & Proficiency"
 
